@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
+import aglogo from './aglogo.png'
 import './App.css';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
     <>
       <div className="header">
         <div className="logo">
-          <img src="src/aglogo.png"/>
+          <img src={aglogo} alt="UP AG"/>
         </div>
         <div className="st-title">
           <h1>UP AG Campaign 12 Scoreboard</h1>
