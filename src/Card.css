@@ -1,0 +1,103 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 0px 3% 0px 3%;
+    width: 100%;
+}
+
+.card {
+    padding: 2px 0 2px 0;
+    width: 90%;
+    height: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    font-size: clamp(10px, 1vw, 12px); /* Responsive font size with min and max */
+}
+
+.column {
+    font-size: clamp(8px, 1.5vw, 18px);
+    flex-direction: row;
+    width: 21%;
+    text-align: center;
+}
+
+
+.exp {
+    width: 58%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+
+.threshold {
+    font-size: clamp(6px, 1.5vw, 16px);
+    width: 10%;
+}
+
+.bar {
+    padding: 4% 0px 4% 0px;
+    width: 80%;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 4vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("2.webp");
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    clip-path: inset(0 100% 0 0);
+}
+
+.text-inside,
+.text-outside {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center text vertically */
+    font-size: clamp(6px, 1.5vw, 12px); /* Adjust font size as needed */
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: #242424;
+    border-radius: 20px;
+    z-index: 2;
+    /* Add additional styling if needed */
+}
+
+.text-inside {
+    left: calc(100% - 8px); /* Position text inside, to the left of the edge of progress bar */
+    transform: translateX(-100%) translateY(-50%); /* Adjust to align vertically centered */
+}
+
+.text-outside {
+    left: 100%; /* Position text outside, immediately to the right of the bar */
+    margin-left: 8px;
+    transform: translateY(-50%); /* Align vertically centered */
+}
