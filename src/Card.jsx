@@ -52,16 +52,16 @@ const Card = ({ data }) => {
           {progressPercent >= 30 ? (
             <div
               className='text-inside'
-              style={{ left: `calc(${progressPercent}% - 8px)` }}
+              style={{ left: `calc(${progressPercent}% - 5px)` }}
             >
-              {`${progressPercent}%`}
+              {`${Progress}`}
             </div>
           ) : (
             <div
               className='text-outside'
               style={{ left: `${progressPercent}%` }}
             >
-              {`${progressPercent}%`}
+              {`${Progress}%`}
             </div>
           )}
         </div>
