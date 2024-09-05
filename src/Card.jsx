@@ -61,7 +61,7 @@ const Card = ({ data }) => {
               className='text-outside'
               style={{ left: `${progressPercent}%` }}
             >
-              {`${Progress}%`}
+              {`${Progress}`}
             </div>
           )}
         </div>

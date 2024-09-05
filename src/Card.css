@@ -98,12 +98,10 @@
 }
 
 .text-inside {
-    left: calc(100% - 8px); /* Position text inside, to the left of the edge of progress bar */
     transform: translateX(-100%) translateY(-50%); /* Adjust to align vertically centered */
 }
 
 .text-outside {
-    left: 100%; /* Position text outside, immediately to the right of the bar */
     margin-left: 5px;
     transform: translateY(-50%); /* Align vertically centered */
 }
