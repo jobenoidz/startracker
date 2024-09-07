@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css';
 
-import yellow from './yellow.gif';
-import green from './green.gif';
-import purple from './purple.gif';
-import blue from './blue.gif';
-import black from './black.gif';
+import yellow from './assets/yellow.gif';
+import green from './assets/green.gif';
+import purple from './assets/purple.gif';
+import blue from './assets/blue.gif';
+import black from './assets/black.gif';
 
 const Card = ({ data }) => {
   const { Name, Start, Progress, End, Unit, Color } = data;

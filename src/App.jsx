@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-import aglogo from './aglogo.png'
+import aglogo from '/aglogo.png'
 import './App.css';
 
 function App() {
