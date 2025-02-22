@@ -41,7 +41,7 @@ function App() {
           <img src={aglogo} alt="UP AG"/>
         </div>
         <div className="st-title">
-          <h1>UP AG Campaign 12 Scoreboard</h1>
+          <h1>UP AG Campaign 13 Scoreboard</h1>
         </div>
       </div>
       <div className="App">
