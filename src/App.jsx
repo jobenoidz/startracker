@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://docs.google.com/spreadsheets/d/1NH7DhBYyBickFlnq_DrK9y7oI8AqXdO5_AuXwcAWIfs/gviz/tq?tqx=out:json&sheet=Progress%20Indicator');
+      const response = await fetch('https://docs.google.com/spreadsheets/d/1F369FN8bIk6vtJIehIX-ssZjmIPQuwDaaR-TSY8rIps/gviz/tq?tqx=out:json&sheet=Progress%20Indicator');
       const text = await response.text();
 
       // Remove the Google Sheets JSONP wrapper
