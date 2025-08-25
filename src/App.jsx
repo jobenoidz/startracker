@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [data, setData] = useState([]);
 
-  const google_sheets_link = 'https://docs.google.com/spreadsheets/d/1NH7DhBYyBickFlnq_DrK9y7oI8AqXdO5_AuXwcAWIfs';
+  const google_sheets_link = 'https://docs.google.com/spreadsheets/d/1hfXuxueM394do3u_Um3-6WoRXqlnHuyR-9m3rLT9Qy0';
 
   useEffect(() => {
     const fetchData = async () => {
